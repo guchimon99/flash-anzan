@@ -20,10 +20,23 @@
   <div class="app">
     <div class="scene scene--start start" data-scene-name="start">
       <div class="start__title">フラッシュ暗算</div>
-      <div class="start__controls">
-        <button class="button" value="easy">かんたん</button>
-        <button class="button" value="normal">ふつう</button>
-        <button class="button" value="hard">むずかしい</button>
+      <div class="start__stages">
+        <button class="button" value="1">1</button>
+        <button class="button" value="2">2</button>
+        <button class="button" value="3">3</button>
+        <button class="button" value="4">4</button>
+        <button class="button" value="5">5</button>
+        <button class="button" value="6">6</button>
+        <button class="button" value="7">7</button>
+        <button class="button" value="8">8</button>
+        <button class="button" value="9">9</button>
+        <button class="button" value="10">10</button>
+        <button class="button" value="11">11</button>
+        <button class="button" value="12">12</button>
+        <button class="button" value="13">13</button>
+        <button class="button" value="14">14</button>
+        <button class="button" value="15">15</button>
+        <button class="button" value="16">16</button>
       </div>
     </div>
     <div class="scene scene--read read" data-scene-name="read">
@@ -47,7 +60,8 @@
       </div>
     </div>
     <div class="scene scene--result result" data-scene-name="result">
-      <div class="result__display" id="result-display">正解</div>
+      <div class="result__message" id="result-message"></div>
+      <div class="result__correct" id="result-correct"></div>
       <div class="result__controls">
         <button class="button" id="result-replay-button">もう一度する</button>
       </div>

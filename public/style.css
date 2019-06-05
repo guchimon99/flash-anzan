@@ -31,18 +31,37 @@ body {
   text-align: center;
   display: block;
   padding: 0;
-  background-color: #FAFAFA;
-  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
   border: none;
   font-weight: bold;
+  background-color: #FAFAFA;
+  color: #333333;
+  border: solid #EEE 0.4rem;
+  box-shadow: 0 0.4rem 0 0 #EEE;
+  position: relative;
+  transition: all .5s ease 0s;
+  top: 0rem;
 }
 
 .button:active {
-  background-color: #EEEEEE;
+  top: 0.4rem;
+  box-shadow: 0 0 0 0 #EEE;
+  transition: all .2s ease 0s;
 }
 
 .button:focus {
   outline: none;
+}
+
+.button.button--primary {
+  background-color: #ACCBFD;
+  border-color: #92BBFC;
+  box-shadow: 0 0.4rem 0 0 #92BBFC;
+}
+
+.button.button--primary:active {
+  box-shadow: 0 0 0 0 #92BBFC;
 }
 
 .scene.scene--hidden {
@@ -58,15 +77,17 @@ body {
 
 .start__title {
   font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.start__controls {
-  display: flex;
-  flex-direction: column;
+.start__stages {
+  display: grid;
+  grid-gap: 1rem;
   width: 100%;
   max-width: 30rem;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .start__controls .button {
@@ -96,6 +117,7 @@ body {
   margin-top: 5rem;
   margin-bottom: 2rem;
   width: 100%;
+  max-width: 30rem;
   font-size: 2rem;
 }
 
@@ -128,10 +150,17 @@ body {
   align-items: center;
 }
 
-.result__display {
+.result__message {
   text-align: center;
-  font-size: 3rem;
-  padding: 2rem 0;
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.result__correct {
+  padding: 1rem;
+  color: #333333;
+  font-size: 1.5rem;
 }
 
 .result__controls {
