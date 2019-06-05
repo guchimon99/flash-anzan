@@ -1,0 +1,139 @@
+html {
+  font-size: 16px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+.scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.button {
+  width: 100%;
+  line-height: 3rem;
+  text-align: center;
+  display: block;
+  padding: 0;
+  background-color: #FAFAFA;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.button:active {
+  background-color: #EEEEEE;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.scene.scene--hidden {
+  display: none;
+}
+
+.start {
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.start__controls {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.start__controls .button {
+  margin-bottom: 1rem;
+}
+
+.read {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.read__text {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.input {
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__value {
+  border-bottom: solid 0.2rem #DDD;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.input__value:empty::before {
+  content: "答えを入力してください";
+  color: #DDD;
+  font-size: 1.5rem;
+}
+
+.input__controls {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  max-width: 30rem;
+}
+
+.input__controls button:nth-child(10) {
+  grid-column: 2 / 3;
+}
+
+.input__controls button:nth-child(12) {
+  grid-column: 1 / 4;
+}
+
+.result {
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result__display {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.result__controls {
+  width: 100%;
+  max-width: 30rem;
+}

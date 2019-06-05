@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フラッシュ暗算</title>
+  <meta name="description" content="普通のフラッシュ暗算">
+  <meta property="og:title"       content="フラッシュ暗算">
+  <meta property="og:description" content="普通のフラッシュ暗算">
+  <meta property="og:url"         content="https://flash-anzan-8ad95.firebaseapp.com">
+  <meta property="og:image"       content="https://flash-anzan-8ad95.firebaseapp.com/ogp.png">
+  <meta name="twitter:card"       content="summary_large_image">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">　
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="scene scene--start start" data-scene-name="start">
+      <div class="start__title">フラッシュ暗算</div>
+      <div class="start__controls">
+        <button class="button" value="easy">かんたん</button>
+        <button class="button" value="normal">ふつう</button>
+        <button class="button" value="hard">むずかしい</button>
+      </div>
+    </div>
+    <div class="scene scene--read read" data-scene-name="read">
+      <div class="read__text" id="read-text">0</div>
+    </div>
+    <div class="scene scene--input input" data-scene-name="input">
+      <div class="input__value" id="input-value"></div>
+      <div class="input__controls">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">0</button>
+        <button class="button" id="input-remove-button">×</button>
+        <button class="button" id="input-submit-button">答える</button>
+      </div>
+    </div>
+    <div class="scene scene--result result" data-scene-name="result">
+      <div class="result__display" id="result-display">正解</div>
+      <div class="result__controls">
+        <button class="button" id="result-replay-button">もう一度する</button>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

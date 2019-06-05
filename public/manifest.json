@@ -1,0 +1,14 @@
+{
+  "name": "フラッシュ暗算",
+  "short_name": "フラ暗",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "普通のフラッシュ暗算",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "related_applications": [ ]
+}
