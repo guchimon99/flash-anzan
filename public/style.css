@@ -34,6 +34,7 @@ body {
   background-color: #FAFAFA;
   border-radius: 0.2rem;
   border: none;
+  font-weight: bold;
 }
 
 .button:active {
